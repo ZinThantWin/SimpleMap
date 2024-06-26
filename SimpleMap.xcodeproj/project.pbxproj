@@ -8,17 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		536DE8BE2C2A780E00AEC3DB /* SimpleMapApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536DE8BD2C2A780E00AEC3DB /* SimpleMapApp.swift */; };
-		536DE8C02C2A780E00AEC3DB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536DE8BF2C2A780E00AEC3DB /* ContentView.swift */; };
-		536DE8C22C2A780F00AEC3DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 536DE8C12C2A780F00AEC3DB /* Assets.xcassets */; };
 		536DE8C52C2A780F00AEC3DB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 536DE8C42C2A780F00AEC3DB /* Preview Assets.xcassets */; };
+		536DE8CD2C2A78A600AEC3DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 536DE8CC2C2A78A600AEC3DB /* Assets.xcassets */; };
+		536DE8FD2C2ABB0800AEC3DB /* LocationsDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536DE8FC2C2ABB0800AEC3DB /* LocationsDataService.swift */; };
+		536DE8FF2C2ABB2300AEC3DB /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536DE8FE2C2ABB2300AEC3DB /* LocationModel.swift */; };
+		536DE9012C2ABBA100AEC3DB /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536DE9002C2ABBA100AEC3DB /* LocationView.swift */; };
+		536DE9032C2ABBE200AEC3DB /* LocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536DE9022C2ABBE200AEC3DB /* LocationViewModel.swift */; };
+		53C2DDBE2C2BDB760044406D /* LocationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C2DDBD2C2BDB760044406D /* LocationListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		536DE8BA2C2A780E00AEC3DB /* SimpleMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		536DE8BD2C2A780E00AEC3DB /* SimpleMapApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleMapApp.swift; sourceTree = "<group>"; };
-		536DE8BF2C2A780E00AEC3DB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		536DE8C12C2A780F00AEC3DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		536DE8C42C2A780F00AEC3DB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		536DE8CC2C2A78A600AEC3DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		536DE8FC2C2ABB0800AEC3DB /* LocationsDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsDataService.swift; sourceTree = "<group>"; };
+		536DE8FE2C2ABB2300AEC3DB /* LocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
+		536DE9002C2ABBA100AEC3DB /* LocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
+		536DE9022C2ABBE200AEC3DB /* LocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewModel.swift; sourceTree = "<group>"; };
+		53C2DDBD2C2BDB760044406D /* LocationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +59,12 @@
 		536DE8BC2C2A780E00AEC3DB /* SimpleMap */ = {
 			isa = PBXGroup;
 			children = (
+				536DE8FB2C2ABAF600AEC3DB /* Models */,
+				536DE8FA2C2ABAE800AEC3DB /* DataServices */,
+				536DE8F92C2ABAE300AEC3DB /* ViewModels */,
+				536DE8F82C2ABAE000AEC3DB /* Views */,
+				536DE8CC2C2A78A600AEC3DB /* Assets.xcassets */,
 				536DE8BD2C2A780E00AEC3DB /* SimpleMapApp.swift */,
-				536DE8BF2C2A780E00AEC3DB /* ContentView.swift */,
-				536DE8C12C2A780F00AEC3DB /* Assets.xcassets */,
 				536DE8C32C2A780F00AEC3DB /* Preview Content */,
 			);
 			path = SimpleMap;
@@ -65,6 +76,39 @@
 				536DE8C42C2A780F00AEC3DB /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		536DE8F82C2ABAE000AEC3DB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				536DE9002C2ABBA100AEC3DB /* LocationView.swift */,
+				53C2DDBD2C2BDB760044406D /* LocationListView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		536DE8F92C2ABAE300AEC3DB /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				536DE9022C2ABBE200AEC3DB /* LocationViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		536DE8FA2C2ABAE800AEC3DB /* DataServices */ = {
+			isa = PBXGroup;
+			children = (
+				536DE8FC2C2ABB0800AEC3DB /* LocationsDataService.swift */,
+			);
+			path = DataServices;
+			sourceTree = "<group>";
+		};
+		536DE8FB2C2ABAF600AEC3DB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				536DE8FE2C2ABB2300AEC3DB /* LocationModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,8 +169,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				536DE8CD2C2A78A600AEC3DB /* Assets.xcassets in Resources */,
 				536DE8C52C2A780F00AEC3DB /* Preview Assets.xcassets in Resources */,
-				536DE8C22C2A780F00AEC3DB /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,7 +181,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				536DE8C02C2A780E00AEC3DB /* ContentView.swift in Sources */,
+				536DE8FD2C2ABB0800AEC3DB /* LocationsDataService.swift in Sources */,
+				536DE8FF2C2ABB2300AEC3DB /* LocationModel.swift in Sources */,
+				536DE9012C2ABBA100AEC3DB /* LocationView.swift in Sources */,
+				53C2DDBE2C2BDB760044406D /* LocationListView.swift in Sources */,
+				536DE9032C2ABBE200AEC3DB /* LocationViewModel.swift in Sources */,
 				536DE8BE2C2A780E00AEC3DB /* SimpleMapApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
