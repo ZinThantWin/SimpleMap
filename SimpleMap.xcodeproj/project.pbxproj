@@ -15,6 +15,10 @@
 		536DE9012C2ABBA100AEC3DB /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536DE9002C2ABBA100AEC3DB /* LocationView.swift */; };
 		536DE9032C2ABBE200AEC3DB /* LocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536DE9022C2ABBE200AEC3DB /* LocationViewModel.swift */; };
 		53C2DDBE2C2BDB760044406D /* LocationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C2DDBD2C2BDB760044406D /* LocationListView.swift */; };
+		53C2DDC02C2BF6430044406D /* LocationOverview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C2DDBF2C2BF6430044406D /* LocationOverview.swift */; };
+		53C2DDC22C2C0F410044406D /* MapAnnotaionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C2DDC12C2C0F410044406D /* MapAnnotaionView.swift */; };
+		53C2DDC52C2D10170044406D /* LocationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C2DDC42C2D10170044406D /* LocationDetailView.swift */; };
+		53C2DDC82C2D234E0044406D /* HelperService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C2DDC72C2D234E0044406D /* HelperService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +31,11 @@
 		536DE9002C2ABBA100AEC3DB /* LocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
 		536DE9022C2ABBE200AEC3DB /* LocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewModel.swift; sourceTree = "<group>"; };
 		53C2DDBD2C2BDB760044406D /* LocationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationListView.swift; sourceTree = "<group>"; };
+		53C2DDBF2C2BF6430044406D /* LocationOverview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationOverview.swift; sourceTree = "<group>"; };
+		53C2DDC12C2C0F410044406D /* MapAnnotaionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapAnnotaionView.swift; sourceTree = "<group>"; };
+		53C2DDC32C2C277A0044406D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		53C2DDC42C2D10170044406D /* LocationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailView.swift; sourceTree = "<group>"; };
+		53C2DDC72C2D234E0044406D /* HelperService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +68,8 @@
 		536DE8BC2C2A780E00AEC3DB /* SimpleMap */ = {
 			isa = PBXGroup;
 			children = (
+				53C2DDC62C2D233E0044406D /* Servies */,
+				53C2DDC32C2C277A0044406D /* Info.plist */,
 				536DE8FB2C2ABAF600AEC3DB /* Models */,
 				536DE8FA2C2ABAE800AEC3DB /* DataServices */,
 				536DE8F92C2ABAE300AEC3DB /* ViewModels */,
@@ -83,6 +94,9 @@
 			children = (
 				536DE9002C2ABBA100AEC3DB /* LocationView.swift */,
 				53C2DDBD2C2BDB760044406D /* LocationListView.swift */,
+				53C2DDBF2C2BF6430044406D /* LocationOverview.swift */,
+				53C2DDC12C2C0F410044406D /* MapAnnotaionView.swift */,
+				53C2DDC42C2D10170044406D /* LocationDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -109,6 +123,14 @@
 				536DE8FE2C2ABB2300AEC3DB /* LocationModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		53C2DDC62C2D233E0044406D /* Servies */ = {
+			isa = PBXGroup;
+			children = (
+				53C2DDC72C2D234E0044406D /* HelperService.swift */,
+			);
+			path = Servies;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,10 +204,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				536DE8FD2C2ABB0800AEC3DB /* LocationsDataService.swift in Sources */,
+				53C2DDC82C2D234E0044406D /* HelperService.swift in Sources */,
+				53C2DDC22C2C0F410044406D /* MapAnnotaionView.swift in Sources */,
+				53C2DDC52C2D10170044406D /* LocationDetailView.swift in Sources */,
 				536DE8FF2C2ABB2300AEC3DB /* LocationModel.swift in Sources */,
 				536DE9012C2ABBA100AEC3DB /* LocationView.swift in Sources */,
 				53C2DDBE2C2BDB760044406D /* LocationListView.swift in Sources */,
 				536DE9032C2ABBE200AEC3DB /* LocationViewModel.swift in Sources */,
+				53C2DDC02C2BF6430044406D /* LocationOverview.swift in Sources */,
 				536DE8BE2C2A780E00AEC3DB /* SimpleMapApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -323,11 +349,11 @@
 				DEVELOPMENT_TEAM = U53AZWGCD8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SimpleMap/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -335,6 +361,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.learningswift.SimpleMap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -352,11 +382,11 @@
 				DEVELOPMENT_TEAM = U53AZWGCD8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SimpleMap/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -364,6 +394,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.learningswift.SimpleMap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

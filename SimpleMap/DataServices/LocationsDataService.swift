@@ -5,7 +5,7 @@ class LocationsDataService {
     
     static let locations: [Location] = [
         Location(
-            name: "Sule Pagoda",
+            name: "Sule",
             cityName: "Yangon",
             coordinates: CLLocationCoordinate2D(latitude: 16.77444827262083, longitude:  96.1587983315105),
             description: "The Sule Pagoda incorporated the original Indian structure of the stupa, which initially was used to replicate the form and function of a relic mound.",
@@ -15,7 +15,7 @@ class LocationsDataService {
             ],
             link: "https://en.wikipedia.org/wiki/Sule_Pagoda"),
         Location(
-            name: "ShweDagon Pagoda",
+            name: "ShweDagon",
             cityName: "Yangon",
             coordinates: CLLocationCoordinate2D(latitude: 16.798348173321685, longitude:  96.14961102860197),
             description: "Legend holds that the Shwedagon Pagoda was constructed more than 2,500 years ago — while the Buddha was still alive — which would make it the oldest Buddhist stupa in the world.",

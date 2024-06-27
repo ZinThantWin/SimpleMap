@@ -23,7 +23,9 @@ class LocationViewModel : ObservableObject {
     
     @Published var mapPosition : MapCameraPosition?
     
-    let mapSpan : MKCoordinateSpan = MKCoordinateSpan(latitudeDelta: 0.002, longitudeDelta: 0.002)
+    @Published var showSheet : Bool = false
+    
+    let mapSpan : MKCoordinateSpan = MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05)
     
     init() {
         let locations = LocationsDataService.locations
@@ -53,5 +55,20 @@ class LocationViewModel : ObservableObject {
             currentLocation = location
             showLocationList = false 
         }
+    }
+    
+    func onTapNext(){
+        guard let currentIndex = locations.firstIndex(where: { currentLocation == $0}) else {
+            print("Cannot find the current index")
+            return
+        }
+        
+        let nextIndex = currentIndex + 1
+        guard locations.indices.contains(nextIndex) else {
+            print("next index is not valid, showing first location")
+            selectLocation(location: locations.first!)
+            return
+        }
+        selectLocation(location: locations[nextIndex])
     }
 }
